@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/index.css" />
+  </head>
+  <body>
+    <section class="sidebar">
+      <aside class="sidebar__main-container">
+        <div class="sidebar__header-container">
+          <img class="sidebar__header-logo" src="#" alt="dashboard-logo" />
+          <h1 class="sidebar__header-text">Dashboard</h1>
+        </div>
+        <nav class="sidebar__navigation-bar-container">
+          <ul class="sidebar__navigation-bar">
+            <li class="sidebar__navigation-bar-element">
+              <img
+                class="sidebar__navigation-bar-element-img"
+                src="#"
+                alt="dashboard-icon"
+              />
+              <p class="sidebar__navigation-bar-btn-text">Dashboard</p>
+            </li>
+            <li class="sidebar__navigation-bar-element">
+              <img
+                class="sidebar__navigation-bar-element-img"
+                src="#"
+                alt="product-icon"
+              />
+              <p class="sidebar__navigation-bar-btn-text">Product</p>
+            </li>
+            <li class="sidebar__navigation-bar-element">
+              <img
+                class="sidebar__navigation-bar-element-img"
+                src="#"
+                alt="customers-icon"
+              />
+              <p class="sidebar__navigation-bar-btn-text">Customers</p>
+            </li>
+            <li class="sidebar__navigation-bar-element">
+              <img
+                class="sidebar__navigation-bar-element-img"
+                src="#"
+                alt="income-icon"
+              />
+              <p class="sidebar__navigation-bar-btn-text">Income</p>
+            </li>
+            <li class="sidebar__navigation-bar-element">
+              <img
+                class="sidebar__navigation-bar-element-img"
+                src="#"
+                alt="promote-icon"
+              />
+              <p class="sidebar__navigation-bar-btn-text">Promote</p>
+            </li>
+            <li class="sidebar__navigation-bar-element">
+              <img
+                class="sidebar__navigation-bar-element-img"
+                src="#"
+                alt="help-icon"
+              />
+              <p class="sidebar__navigation-bar-btn-text">Help</p>
+            </li>
+          </ul>
+        </nav>
+        <div class="sidebar__user-info-container">
+          <img class="sidebar__user-pfp" src="#" alt="user-pfp" />
+          <div class="sidebar__user-info-inner-container">
+            <p class="sidebar__user-name">Evano</p>
+            <p class="sidebar__user-job">Project Manager</p>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+
+
+
+
+    <section class="customers">
+      <!--   a container for greeting user by his name   -->
+      <div class="customers__main-container">
+        <div class="customers__user-greet-container">
+          <h2 class="customers__user-greet">Hello Evano👋,</h2>
+        </div>
+        <!--   a container for displaying users information    -->
+        <div class="customers__user-info-container">
+          <!--   a container for top part of user-info container -->
+          <div class="customers__user-info-top-part-container">
+            <div class="customers__user-info-header-container">
+              <h2 class="customers__user-info-header-text">All Customers</h2>
+              <p class="customers__user-info-header-secondary-text">
+                Active Members
+              </p>
+            </div>
+            <div class="customers__searchbar-container">
+              <label class="customers__searchbar-label" for="search-input">
+                <img src="#" alt="search-icon" />
+              </label>
+              <input
+                class="customers__searchbar-input"
+                type="text"
+                id="search-input"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+          <!--     customers information table     -->
+          <div class="customers__user-info-middle-part-container">
+            <table class="customers__table">
+              <thead class="customers__table-header">
+                <tr class="customers__table-header-row">
+                  <th class="customers__table-header-row-data">
+                    Customer Name
+                  </th>
+                  <th class="customers__table-header-row-data">Company</th>
+                  <th class="customers__table-header-row-data">Phone Number</th>
+                  <th class="customers__table-header-row-data">Email</th>
+                  <th class="customers__table-header-row-data">Country</th>
+                  <th class="customers__table-header-row-data">Status</th>
+                </tr>
+              </thead>
+
+              <tbody class="customers__table-body">
+                <tr class="customers__table-body-row">
+                  <td class="customers__table-body-row-data">Jane Cooper</td>
+                  <td class="customers__table-body-row-data">Microsoft</td>
+                  <td class="customers__table-body-row-data">(225) 555-0118</td>
+                  <td class="customers__table-body-row-data">
+                    jane@microsoft.com
+                  </td>
+                  <td class="customers__table-body-row-data">United States</td>
+                  <td class="customers__table-body-row-data">
+                    <div class="customers__table-body-row-status-container">
+                      <p class="customers__table-body-row-status-text">
+                        Active
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="customers__table-body-row">
+                  <td class="customers__table-body-row-data">Floyd Miles</td>
+                  <td class="customers__table-body-row-data">Yahoo</td>
+                  <td class="customers__table-body-row-data">(205) 555-0100</td>
+                  <td class="customers__table-body-row-data">
+                    floyd@yahoo.com
+                  </td>
+                  <td class="customers__table-body-row-data">Kiribati</td>
+                  <td class="customers__table-body-row-data">
+                    <div class="customers__table-body-row-status-container">
+                      <p class="customers__table-body-row-status-text">
+                        Inactive
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--    navigation bar      -->
+          <div class="customers__user-info-bottom-part-container">
+            <nav class="customers__pagination">
+              <button
+                class="customers__pagination-btn-prev"
+                aria-label="Previous-page"
+              >
+                <
+              </button>
+              <ul class="customers__pagination-list">
+                <li class="customers__pagination-list-element">1</li>
+                <li class="customers__pagination-list-element">2</li>
+                <li class="customers__pagination-list-element">3</li>
+                <li class="customers__pagination-list-element">4</li>
+                <li class="customers__pagination-list-element">...</li>
+                <li class="customers__pagination-list-element">40</li>
+              </ul>
+              <button
+                class="customers__pagination-btn-next"
+                aria-label="Next-page"
+              >
+                >
+              </button>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+.sidebar{
+    .sidebar__main-container{
+        margin-left: 20px;
+        .sidebar__header-container{
+            display: flex;
+            .sidebar__header-logo{}
+            .sidebar__header-text{
+                margin: 0;
+            }
+        }
+
+        .sidebar__navigation-bar-container{
+            .sidebar__navigation-bar{
+                .sidebar__navigation-bar-element{
+                    .sidebar__navigation-bar-element-img{}
+                    .sidebar__navigation-bar-btn-text{}
+                }
+            }
+        }
+
+        .sidebar__user-info-container{
+            .sidebar__user-pfp{}
+            .sidebar__user-info-inner-container{
+                .sidebar__user-name{}
+                .sidebar__user-job{}
+            }
+        }
+
+    }
+}
