@@ -1,3 +1,13 @@
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 body{
     display: flex;
+}
+
+:root{
+    --svg-filter: brightness(0) saturate(100%) invert(48%) sepia(37%) saturate(671%) hue-rotate(205deg) brightness(90%) contrast(95%);
+    --svg-hex-color: #9197B3;
 }

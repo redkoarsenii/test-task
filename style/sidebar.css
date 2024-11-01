@@ -1,19 +1,56 @@
 .sidebar{
     .sidebar__main-container{
-        margin-left: 20px;
+        background-color: dimgrey;
         .sidebar__header-container{
             display: flex;
-            .sidebar__header-logo{}
+            justify-content: center;
+            align-items: center;
+            .sidebar__header-logo{
+                width: 32px;
+                height: 32px;
+            }
             .sidebar__header-text{
                 margin: 0;
+                font-size: 26px;
+                font-weight: 600;
+                letter-spacing: 0.26px;
+            }
+            .sidebar__header-text::after{
+                content: "v.01";
+                font-size: 10px;
+                font-weight: 500;
+                color: #838383;
             }
         }
 
         .sidebar__navigation-bar-container{
             .sidebar__navigation-bar{
+                list-style-type: none;
+                padding: 0;
                 .sidebar__navigation-bar-element{
-                    .sidebar__navigation-bar-element-img{}
-                    .sidebar__navigation-bar-btn-text{}
+                    display: flex;
+                    justify-content: space-between;
+                    .sidebar__navigation-bar-element-inner-container{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .sidebar__navigation-bar-element-img{
+                            width: 24px;
+                            height: 24px;
+                            filter: var(--svg-filter);
+                            margin-left: 8px;
+                        }
+                        .sidebar__navigation-bar-btn-text{
+                            color: #9197B3;
+                            font-size: 14px;
+                            font-weight: 400;
+                            margin-left: 8px;
+                        }
+                    }
+                    .sidebar__navigation-bar-btn-text-arrow{
+                        color: var(--svg-hex-color);
+                        margin-right: 8px;
+                    }
                 }
             }
         }
