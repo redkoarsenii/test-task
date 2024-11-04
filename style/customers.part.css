@@ -15,7 +15,7 @@
             padding: 51px;
             width: 968px;
             height: 850px;
-            box-shadow: 0px 10px 60px rgba(225.83, 236.19, 248.63, 0.50);
+            box-shadow: 0 10px 60px rgba(225.83, 236.19, 248.63, 0.50);
             border-radius: 30px;
             background-color: white;
 
@@ -132,13 +132,61 @@
                 }
                 .customers__pagination{
                     display: flex;
-                    .customers__pagination-btn-prev{}
+                    .customers__pagination-btn-prev{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 25px;
+                        height: 20px;
+                        border-radius: 4px;
+                        background-color: var(--btn-bg-color);
+                        border: 1px #EEEEEE solid;
+                    }
                     .customers__pagination-list{
                         display: flex;
                         list-style-type: none;
-                        .customers__pagination-list-element{}
+                        .customers__pagination-list-element{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background-color: var(--btn-bg-color);
+                            border: 1px #EEEEEE solid;
+                            width: 25px;
+                            height: 20px;
+                            border-radius: 4px;
+                            font-size: 12px;
+                            font-weight: 500;
+                            line-height: 12px;
+                            margin-left: 4px;
+                            margin-right: 4px;
+                        }
+                        .dots{
+                            background-color: #FFFFFF;
+                            border: none;
+                        }
+                        .customers__pagination-list-element:hover{
+                            background-color: var(--btn-on-hover-color);
+                            color: #FFFFFF;
+                        }
                     }
-                    .customers__pagination-btn-next{}
+                    .customers__pagination-btn-next{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 25px;
+                        height: 20px;
+                        border-radius: 4px;
+                        background-color: var(--btn-bg-color);
+                        border: 1px #EEEEEE solid;
+                    }
+                    .customers__pagination-btn-prev:hover{
+                        background-color: var(--btn-on-hover-color);
+                        color: #FFFFFF;
+                    }
+                    .customers__pagination-btn-next:hover{
+                        background-color: var(--btn-on-hover-color);
+                        color: #FFFFFF;
+                    }
                 }
             }
         }
