@@ -19,4 +19,13 @@ body{
     --pfp-text-color: #757575;
     --btn-on-hover-color: #5932EA;
     --btn-text-on-hover-color: #FFFFFF;
+    --green-text-color: #16C098;
+    --search-bg-color: #F9FBFF;
+    --search-text-color: #B5B7C0;
+    --table-text-color: #292D32;
+    --line-color: #EEEEEE;
+    --active-bg-color: rgba(22, 192, 152, 0.38);
+    --active-text-color: #008767;
+    --inactive-bg-color: #FFC5C5;
+    --inactive-text-color: #DF0404;
 }

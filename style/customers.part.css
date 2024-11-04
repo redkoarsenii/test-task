@@ -1,4 +1,146 @@
-.customers__pagination-list{
-    list-style: none;
-    display: flex;
+.customers{
+    background-color: var(--search-bg-color);
+    width: 100%;
+    .customers__main-container{
+        .customers__user-greet-container{
+            margin: 41px 0 51px 71px;
+            .customers__user-greet{
+                font-size: 24px;
+                font-weight: 500;
+            }
+        }
+        .customers__user-info-container{
+            margin-left: 71px;
+            margin-right: 95px;
+            padding: 51px;
+            width: 968px;
+            height: 850px;
+            box-shadow: 0px 10px 60px rgba(225.83, 236.19, 248.63, 0.50);
+            border-radius: 30px;
+            background-color: white;
+
+            .customers__user-info-top-part-container{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .customers__user-info-header-container{
+                    .customers__user-info-header-text{
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+                    .customers__user-info-header-secondary-text{
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: var(--green-text-color);
+                    }
+                }
+                .customers__searchbar-container{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: var(--search-bg-color);
+                    border-radius: 10px;
+                    padding: 7px;
+                    .customers__searchbar-label{
+                        display: flex;
+                        align-items: center;
+                        .customers__searchbar-label-picture{}
+                    }
+                    .customers__searchbar-input{
+                        margin-left: 8px;
+                        border: none;
+                        background-color: transparent;
+                        outline: none;
+                    }
+                    .customers__searchbar-input::placeholder{
+                        color: var(--search-text-color);
+                    }
+                }
+            }
+            .customers__user-info-middle-part-container{
+                margin-top:46px;
+                display: flex;
+                justify-content: center;
+                .customers__table{
+                    /*background: green;*/
+                    width: 100%;
+                    .customers__table-header{
+                        text-align: left;
+                        .customers__table-header-row{
+                            .customers__table-header-row-data{
+                                color: var(--search-text-color);
+                                font-size: 14px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                    .customers__table-header::after{
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 969px;
+                        left: 385px;
+                        height: 1px;
+                        background-color: var(--line-color);
+                    }
+                    .customers__table-body{
+                        .customers__table-body-row{
+                            .customers__table-body-row-data{
+                                padding: 20px 0 20px 0;
+                                color: var(--table-text-color);
+                                font-size: 14px;
+                                font-weight: 500;
+                                border-bottom: 1px solid var(--line-color);
+                            }
+                            .customers__table-body-row-status-container{
+                                display: flex;
+                                align-items: center;
+                                .customers__table-body-row-status-text{
+                                    text-align: center;
+                                    padding: 4px 18px;
+                                }
+
+                                .inactive_status{
+                                    background-color: var(--inactive-bg-color);
+                                    color: var(--inactive-text-color);
+                                    border-radius: 4px;
+                                    border: 1px solid var(--inactive-text-color);
+                                }
+                                .active_status{
+                                    background-color: var(--active-bg-color);
+                                    color: var(--active-text-color);
+                                    border-radius: 4px;
+                                    border: 1px solid var(--active-text-color);
+                                    width: 93px;
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+            .customers__user-info-bottom-part-container{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+                .customers__pagination-text-container{
+                    .customers__pagination-text{
+                        color: var(--search-text-color);
+                        font-size: 14px;
+                        font-weight: 500;
+                    }
+                }
+                .customers__pagination{
+                    display: flex;
+                    .customers__pagination-btn-prev{}
+                    .customers__pagination-list{
+                        display: flex;
+                        list-style-type: none;
+                        .customers__pagination-list-element{}
+                    }
+                    .customers__pagination-btn-next{}
+                }
+            }
+        }
+    }
 }
