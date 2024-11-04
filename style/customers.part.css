@@ -141,6 +141,7 @@
                         border-radius: 4px;
                         background-color: var(--btn-bg-color);
                         border: 1px #EEEEEE solid;
+                        cursor: pointer;
                     }
                     .customers__pagination-list{
                         display: flex;
@@ -159,6 +160,7 @@
                             line-height: 12px;
                             margin-left: 4px;
                             margin-right: 4px;
+                            cursor: pointer;
                         }
                         .dots{
                             background-color: #FFFFFF;
@@ -178,6 +180,7 @@
                         border-radius: 4px;
                         background-color: var(--btn-bg-color);
                         border: 1px #EEEEEE solid;
+                        cursor: pointer;
                     }
                     .customers__pagination-btn-prev:hover{
                         background-color: var(--btn-on-hover-color);
