@@ -1,0 +1,4 @@
+.customers__pagination-list{
+    list-style: none;
+    display: flex;
+}

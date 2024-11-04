@@ -1,6 +1,10 @@
 
 *{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    word-break: break-word;
 }
 
 body{
@@ -9,5 +13,10 @@ body{
 
 :root{
     --svg-filter: brightness(0) saturate(100%) invert(48%) sepia(37%) saturate(671%) hue-rotate(205deg) brightness(90%) contrast(95%);
+    --svg-filter-white: invert(1) sepia(0) saturate(0) brightness(100) ;
     --svg-hex-color: #9197B3;
+    --version-text-color: #838383;
+    --pfp-text-color: #757575;
+    --btn-on-hover-color: #5932EA;
+    --btn-text-on-hover-color: #FFFFFF;
 }
